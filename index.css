@@ -1,0 +1,177 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+nav {
+  height: 100px;
+  background: url("./images/free-hd-background-2.jpg");
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white; }
+  nav .icon-show {
+    cursor: pointer; }
+  nav div .bx-cart {
+    font-size: 30px; }
+
+.items {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .items .item {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    margin: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .items .item img {
+      width: 100%;
+      height: 200px;
+      -webkit-transition: .5s;
+      transition: .5s;
+      margin-bottom: 10px;
+      cursor: pointer; }
+    .items .item button {
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      bottom: 0;
+      border: none;
+      outline: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background-color: aqua; }
+      .items .item button .icon-cart {
+        font-size: 20px; }
+
+.item button:hover {
+  background-color: red; }
+
+.item img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+#modal {
+  width: 50%;
+  max-height: 350px;
+  position: fixed;
+  background-color: black;
+  overflow-y: scroll;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center; }
+  #modal i {
+    float: right;
+    cursor: pointer; }
+  #modal .total {
+    margin: 10px;
+    position: relative;
+    font-size: 20px; }
+
+@media (max-width: 880px) {
+  #modal {
+    width: 90%; }
+
+  .cart {
+    min-height: 150px; } }
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .cart img {
+    width: 100px;
+    height: 65px; }
+  .cart .cart-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid black;
+    margin: 25px 10px; }
+    .cart .cart-item h3 {
+      font-size: 20px; }
+  .cart .btn-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .cart .btn-icon h2 {
+      font-size: 18px;
+      margin-top: 5px; }
+    .cart .btn-icon button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 20px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .cart .btn-icon * {
+      margin: 5px; }
+
+.hide {
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  cursor: pointer; }
+
+.empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 25px; }
